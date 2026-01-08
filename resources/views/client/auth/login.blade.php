@@ -97,14 +97,14 @@
                         <div>
                             <label for="email" class="block text-sm font-medium text-dark-300 mb-2">E-mail</label>
                             <div class="relative">
-                                <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="username"
-                                       class="w-full rounded-xl border-dark-600 bg-dark-700/50 text-white placeholder-dark-400 focus:border-primary-500 focus:ring-primary-500 pl-12 py-3"
-                                       placeholder="seu@email.com">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none z-10">
                                     <svg class="h-5 w-5 text-dark-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                 </div>
+                                <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="username"
+                                       class="w-full rounded-xl border-dark-600 bg-dark-700/50 text-white placeholder-dark-400 focus:border-primary-500 focus:ring-primary-500 pl-12 py-3 relative z-0"
+                                       placeholder="seu@email.com">
                             </div>
                             @error('email')
                                 <p class="mt-2 text-sm text-danger-400">{{ $message }}</p>
@@ -115,15 +115,15 @@
                         <div x-data="{ show: false }">
                             <label for="password" class="block text-sm font-medium text-dark-300 mb-2">Senha</label>
                             <div class="relative">
-                                <input id="password" :type="show ? 'text' : 'password'" name="password" required autocomplete="current-password"
-                                       class="w-full rounded-xl border-dark-600 bg-dark-700/50 text-white placeholder-dark-400 focus:border-primary-500 focus:ring-primary-500 pl-12 pr-12 py-3"
-                                       placeholder="••••••••">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none z-10">
                                     <svg class="h-5 w-5 text-dark-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                                     </svg>
                                 </div>
-                                <button type="button" @click="show = !show" class="absolute inset-y-0 right-0 flex items-center pr-4 text-dark-400 hover:text-white">
+                                <input id="password" :type="show ? 'text' : 'password'" name="password" required autocomplete="current-password"
+                                       class="w-full rounded-xl border-dark-600 bg-dark-700/50 text-white placeholder-dark-400 focus:border-primary-500 focus:ring-primary-500 pl-12 pr-12 py-3 relative z-0"
+                                       placeholder="••••••••">
+                                <button type="button" @click="show = !show" class="absolute inset-y-0 right-0 flex items-center pr-4 text-dark-400 hover:text-white z-10">
                                     <svg x-show="!show" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />

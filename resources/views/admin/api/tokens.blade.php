@@ -35,11 +35,12 @@
                             Copie o token abaixo. <strong>Por segurança, ele não será exibido novamente.</strong>
                         </p>
                         <div class="mt-4 flex items-center gap-2">
-                            <code id="newToken" class="flex-1 rounded-lg bg-dark-900 px-4 py-3 text-sm font-mono text-success-400 break-all">
+                            <code id="newToken" class="flex-1 rounded-lg bg-dark-800 border border-dark-600 px-4 py-3 text-sm font-mono text-emerald-400 break-all select-all">
                                 {{ session('newToken') }}
                             </code>
                             <button onclick="copyToken()" 
-                                    class="flex-shrink-0 rounded-lg bg-success-600 px-4 py-3 text-sm font-medium text-white hover:bg-success-700 transition-colors">
+                                    class="flex-shrink-0 rounded-lg bg-success-600 px-4 py-3 text-sm font-medium text-white hover:bg-success-700 transition-colors"
+                                    title="Copiar token">
                                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
                                 </svg>
