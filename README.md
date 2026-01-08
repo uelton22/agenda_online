@@ -98,6 +98,11 @@ A API foi desenvolvida com o objetivo de permitir **automações** através de f
 ### Painel Administrativo
 
 <p align="center">
+  <img src="docs/screenshots/admin-login.png" width="80%" alt="Login">
+  <br><em>Login Administrativo</em>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/admin-dashboard.png" width="80%" alt="Dashboard Admin">
   <br><em>Dashboard Administrativo</em>
 </p>
@@ -112,12 +117,12 @@ A API foi desenvolvida com o objetivo de permitir **automações** através de f
   <br><em>Lista de Agendamentos</em>
 </p>
 
-<p align="center">
-  <img src="docs/screenshots/admin-professionals.png" width="80%" alt="Profissionais">
-  <br><em>Gestão de Profissionais</em>
-</p>
-
 ### Área do Cliente
+
+<p align="center">
+  <img src="docs/screenshots/client-login.png" width="80%" alt="Login">
+  <br><em>Login do Cliente</em>
+</p>
 
 <p align="center">
   <img src="docs/screenshots/client-dashboard.png" width="80%" alt="Dashboard Cliente">
@@ -125,8 +130,8 @@ A API foi desenvolvida com o objetivo de permitir **automações** através de f
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/client-booking.png" width="80%" alt="Novo Agendamento">
-  <br><em>Tela de Novo Agendamento</em>
+  <img src="docs/screenshots/client-appointments.png" width="80%" alt="Calendário">
+  <br><em>Calendário de Agendamentos</em>
 </p>
 
 ---
