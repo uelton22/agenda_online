@@ -64,6 +64,8 @@
         <!-- Appointment Details Modal -->
         <div x-show="showModal" 
              x-cloak
+             x-transition
+             style="display: none;"
              class="fixed inset-0 z-50 overflow-y-auto" 
              aria-labelledby="modal-title" 
              role="dialog" 
